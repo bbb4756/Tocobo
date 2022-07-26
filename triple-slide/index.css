@@ -1,0 +1,91 @@
+/* CSS style sheet */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {list-style: none;}
+a {text-decoration: none;}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* overflow: hidden; */
+}
+
+#wrap > div{
+    font-size: 150px;
+    text-align: center;
+}
+
+.box {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+
+.first, .fifth {
+    background-color: white; 
+}
+
+.second, .sixth {
+    background-color: white; 
+}
+
+.third, .seventh {
+    background-color: white; 
+}
+
+.fourth, .eighth {
+    background-color: white; 
+}
+
+.first, .on1 .eighth, .on2 .seventh, .on3 .sixth, .on4 .fifth, .on5 .fourth, .on6 .third, .on7 .second, .on8 .first {
+    left: 25%;
+}
+
+.second, .on1 .first, .on2 .eighth, .on3 .seventh, .on4 .sixth, .on5 .fifth, .on6 .fourth, .on7 .third, .on8 .second {
+    left: 75%;
+}
+
+.third, .on1 .second, .on2 .first, .on3 .eighth, .on4 .seventh, .on5 .sixth, .on6 .fifth, .on7 .fourth, .on8 .third {
+    left: 125%;
+}
+
+.fourth, .on1 .third, .on2 .second, .on3 .first, .on4 .eighth, .on5 .seventh, .on6 .sixth, .on7 .fifth, .on8 .fourth {
+    left: 175%;
+}
+
+.fifth, .on1 .fourth, .on2 .third, .on3 .second, .on4 .first, .on5 .eighth, .on6 .seventh, .on7 .sixth, .on8 .fifth {
+    left: 225%;
+    z-index: -1;
+}
+
+.sixth, .on1 .fifth, .on2 .fourth, .on3 .third, .on4 .second, .on5 .first, .on6 .eighth, .on7 .seventh, .on8 .sixth {
+    left: -125%;
+    z-index: -1;
+}
+
+.seventh, .on1 .sixth, .on2 .fifth, .on3 .fourth, .on4 .third, .on5 .second, .on6 .first, .on7 .eighth, .on8 .seventh {
+    left: -75%;
+}
+
+.eighth, .on1 .seventh, .on2 .sixth, .on3 .fifth, .on4 .fourth, .on5 .third, .on6 .second, .on7 .first, .on8 .eighth {
+    left: -25%;
+}
+
+/* 여기부터 button */
+.btn {
+    display: inline-block;
+    position: fixed;
+    width: 80px;
+    top: 350px;
+    left: 200px;
+}
+
+.right {
+    left: 300px;
+}

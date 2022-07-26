@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#wrap{
+    height:5000px;
+}
+
+#box1{
+    position:absolute;
+    top:3000px;
+    height:300px;
+    width:300px;
+    left:50%;
+    background:red;
+}
+
+.show{
+    animation:slider 3s;
+    
+}
+
+@keyframes slider{
+    from{
+        left:0px;
+    }to{
+        left:50%;
+    }
+}

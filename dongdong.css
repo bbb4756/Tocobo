@@ -1,0 +1,19 @@
+    .box > img{
+        animation-name: dongdong;
+        animation-duration: 2.4s;
+        animation-iteration-count: infinite ;
+    }
+
+    @keyframes dongdong{
+        0%{
+            margin-top: 0px;
+        }
+
+        42%{
+            margin-top: -25px;
+        }
+
+        100%{
+            margin-top: 0px;
+        }
+    }
